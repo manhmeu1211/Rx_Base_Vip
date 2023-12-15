@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension UICollectionView {
     static func scrollDirection(_ direction: UICollectionView.ScrollDirection)

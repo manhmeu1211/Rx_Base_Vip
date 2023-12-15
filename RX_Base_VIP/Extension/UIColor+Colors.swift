@@ -12,9 +12,9 @@ public extension UIColor {
         return UIColor(red: 52/255, green: 68/255, blue: 80/255, alpha: 1)
     }
     
-    static var accent: UIColor {
-        UIColor(red: 0.396, green: 0.859, blue: 0.898, alpha: 1)
-    }
+//    static var accent: UIColor {
+//        UIColor(red: 0.396, green: 0.859, blue: 0.898, alpha: 1)
+//    }
     
     static var background: UIColor {
         UIColor(red: 0, green: 0, blue: 0, alpha: 1)

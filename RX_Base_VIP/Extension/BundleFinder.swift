@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class EditorBaseBundle {
     static let assetBundle: Bundle = {
@@ -14,16 +15,6 @@ class EditorBaseBundle {
         let assetBundle = Bundle(url: bundleUrl)!
         return assetBundle
     }()
-}
-
-
-extension String {
-    var localized: String {
-        return NSLocalizedString(self,
-                                 tableName: "",
-                                 bundle: EditorBaseBundle.assetBundle,
-                                 comment: "")
-    }
 }
 
 struct Color {

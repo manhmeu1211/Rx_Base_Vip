@@ -9,22 +9,14 @@ import Foundation
 import UIKit
 import RXVIPArchitechture
 
-protocol BaseApplicationNavigatorType: NavigatorType {
+protocol BaseApplicationNavigatorType: NavigatorType, RXVIPMakeHome, RXVIPMakeIntro {
     
 }
 
 struct BaseApplicationNavigator: BaseApplicationNavigatorType {
     func makeViewController() -> UIViewController {
-//        if isFirstTimeLaunch {
-//            markFirstTimeLaunched()
-//            let homeNavigator = makeIntro()
-//            return homeNavigator.makeViewController()
-//        } else {
-//            let homeNavigator = makeHome()
-//            return homeNavigator.makeViewController()
-//        }
-        
-        return UIViewController()
+        let homeNavigator = makeIntro()
+        return homeNavigator.makeViewController()
     }
 }
 

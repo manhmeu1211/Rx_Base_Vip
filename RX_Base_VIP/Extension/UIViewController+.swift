@@ -82,53 +82,53 @@ public extension UIViewController {
         }
     }
     
-    func showCustomLoading(for view: UIView, isLoading: Bool) {
-        if isLoading {
-            let hud = MBProgressHUD.forView(view) ?? MBProgressHUD.showAdded(to: view, animated: false)
-            hud.mode = .customView
-            hud.bezelView.style = .solidColor
-            hud.label.textColor = .text
-            hud.label.font = .font(.medium, withSize: .size12)
-            hud.label.text = "Loading..."
-            hud.contentColor = .text
-            hud.bezelView.backgroundColor = .clear
-            
-            let loadingView = EBLoadingView()
-            var backgroundView: UIView
-            if #available(iOS 14, *) {
-                backgroundView = EBBlurView()
-                hud.backgroundView.subviews {
-                    backgroundView
-                }
-                backgroundView.fillContainer()
-            } else {
-                hud.backgroundColor = .black.withAlphaComponent(0.5)
-            }
-            
-            hud.customView = loadingView
-            hud.show(animated: false)
-            loadingView.startLoading()
-        } else {
-            MBProgressHUD.hide(for: view, animated: false)
-        }
-    }
+//    func showCustomLoading(for view: UIView, isLoading: Bool) {
+//        if isLoading {
+//            let hud = MBProgressHUD.forView(view) ?? MBProgressHUD.showAdded(to: view, animated: false)
+//            hud.mode = .customView
+//            hud.bezelView.style = .solidColor
+//            hud.label.textColor = .text
+//            hud.label.font = .font(.medium, withSize: .size12)
+//            hud.label.text = "Loading..."
+//            hud.contentColor = .text
+//            hud.bezelView.backgroundColor = .clear
+//            
+//            let loadingView = LoadingView()
+//            var backgroundView: UIView
+//            if #available(iOS 14, *) {
+//                backgroundView = BlurView()
+//                hud.backgroundView.subviews {
+//                    backgroundView
+//                }
+//                backgroundView.fillContainer()
+//            } else {
+//                hud.backgroundColor = .black.withAlphaComponent(0.5)
+//            }
+//            
+//            hud.customView = loadingView
+//            hud.show(animated: false)
+//            loadingView.startLoading()
+//        } else {
+//            MBProgressHUD.hide(for: view, animated: false)
+//        }
+//    }
     
-    func showLoadingRemoveBG(for view: UIView, isLoading: Bool) {
-        if isLoading {
-            let hud = MBProgressHUD.forView(view) ?? MBProgressHUD.showAdded(to: view, animated: true)
-            hud.mode = .customView
-            hud.bezelView.style = .solidColor
-            hud.bezelView.backgroundColor = .clear
-            
-            let loadingView = EBRemoveBGLoadingView()
-            
-            hud.customView = loadingView
-            hud.show(animated: true)
-            loadingView.loadingView.startLoading()
-        } else {
-            MBProgressHUD.hide(for: view, animated: true)
-        }
-    }
+//    func showLoadingRemoveBG(for view: UIView, isLoading: Bool) {
+//        if isLoading {
+//            let hud = MBProgressHUD.forView(view) ?? MBProgressHUD.showAdded(to: view, animated: true)
+//            hud.mode = .customView
+//            hud.bezelView.style = .solidColor
+//            hud.bezelView.backgroundColor = .clear
+//            
+//            let loadingView = RemoveBGLoadingView()
+//            
+//            hud.customView = loadingView
+//            hud.show(animated: true)
+//            loadingView.loadingView.startLoading()
+//        } else {
+//            MBProgressHUD.hide(for: view, animated: true)
+//        }
+//    }
 }
 
 extension UIViewController {

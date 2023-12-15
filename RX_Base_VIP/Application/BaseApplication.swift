@@ -14,7 +14,7 @@ final class BaseApplication {
     let disposeBag = DisposeBag()
     
     private init () {
-//        UIView.configBaseApperance()
+        UIView.configAppearance()
         configFirebase()
         configRealmDatabase()
     }
@@ -25,7 +25,6 @@ final class BaseApplication {
             rootViewController: navigator.makeViewController())
         window.rootViewController = viewController
         
-//        #endif
     }
 }
 

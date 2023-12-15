@@ -7,8 +7,6 @@
 
 import UIKit
 import Stevia
-import UnitImageLayerEditor
-import UnitAlert
 
 extension UIView {
     public static func configAppearance() {
@@ -68,37 +66,37 @@ extension UIView {
         }
         
         UILabel
-            .appearance(whenContainedInInstancesOf: [EBViewController.self])
+            .appearance(whenContainedInInstancesOf: [BaseViewController.self])
             .style {
                 $0.textColor = .text
             }
         
         UITableView
-            .appearance(whenContainedInInstancesOf: [EBViewController.self])
+            .appearance(whenContainedInInstancesOf: [BaseViewController.self])
             .style {
                 $0.backgroundColor = .clear
             }
         
         UITableViewCell
-            .appearance(whenContainedInInstancesOf: [EBViewController.self])
+            .appearance(whenContainedInInstancesOf: [BaseViewController.self])
             .style {
                 $0.backgroundColor = .clear
             }
         
         UICollectionView
-            .appearance(whenContainedInInstancesOf: [EBViewController.self])
+            .appearance(whenContainedInInstancesOf: [BaseViewController.self])
             .style {
                 $0.backgroundColor = .clear
             }
         
         UICollectionViewCell
-            .appearance(whenContainedInInstancesOf: [EBViewController.self])
+            .appearance(whenContainedInInstancesOf: [BaseViewController.self])
             .style {
                 $0.backgroundColor = .clear
             }
         
         UIImageView
-            .appearance(whenContainedInInstancesOf: [EBViewController.self])
+            .appearance(whenContainedInInstancesOf: [BaseViewController.self])
             .style {
                 $0.tintColor = .text
             }
@@ -110,22 +108,5 @@ extension UIView {
                 $0.thumbTintColor = .text
                 $0.minimumTrackTintColor = .text
             }
-    }
-}
-
-extension UIView {
-    public static func configEditorAppearence() {
-        IGOverlayEditView.appearance().style {
-            $0.closeButtonImage = UIImage.named("ic_delete_layer")
-            $0.resizeButtonImage = UIImage.named("ic_resize_layer")
-            $0.rotationButtonImage = UIImage.named("ic_rotation_layer")
-            $0.tintColor = .accent
-            $0.setButtonBorder(width: 0)
-            $0.frameCornerRadius = 4
-            $0.frameBorderWidth = 1.64
-            $0.setBorderDraggingEnable(true)
-        }
-        
-        //        UNLLayersEditorManager.applicationRootFolder = BBFileManager.rootFolder
     }
 }

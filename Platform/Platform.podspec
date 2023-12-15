@@ -32,10 +32,18 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'Platform/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'Platform' => ['Platform/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'Fonts' => [
+       'Platform/Resources/fonts',
+       'Platform/Resources/custom_fonts'
+     ]
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.dependency 'RxCocoa'
+  s.dependency 'Domain'
+  s.dependency 'RxRealm'
+  s.dependency 'RxSwift'
+  s.dependency 'RXNetworking'
+
 end

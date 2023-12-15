@@ -5,7 +5,7 @@
 //  Created by Luong Manh on 15/12/2023.
 //
 
-import VIPArchitechture
+import RXVIPArchitechture
 import MBProgressHUD
 import UIKit
 import RxSwift
@@ -47,19 +47,19 @@ public extension Reactive where Base: UIViewController {
         }
     }
     
-    var isCustomizedLoading: Binder<Bool> {
-        return Binder(base) { viewController, isLoading in
-            let view: UIView = viewController.view
-            viewController.showCustomLoading(for: view, isLoading: isLoading)
-        }
-    }
-    
-    var isCustomizedRemoveBGLoading: Binder<Bool> {
-        return Binder(base) { viewController, isLoading in
-            let view: UIView = viewController.view
-            viewController.showLoadingRemoveBG(for: view, isLoading: isLoading)
-        }
-    }
+//    var isCustomizedLoading: Binder<Bool> {
+//        return Binder(base) { viewController, isLoading in
+//            let view: UIView = viewController.view
+//            viewController.showCustomLoading(for: view, isLoading: isLoading)
+//        }
+//    }
+//    
+//    var isCustomizedRemoveBGLoading: Binder<Bool> {
+//        return Binder(base) { viewController, isLoading in
+//            let view: UIView = viewController.view
+//            viewController.showLoadingRemoveBG(for: view, isLoading: isLoading)
+//        }
+//    }
     
     var applicationDidBecomeActive: Observable<Void> {
         return NotificationCenter.default.rx.notification(UIApplication.didBecomeActiveNotification)

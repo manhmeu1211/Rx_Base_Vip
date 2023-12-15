@@ -18,7 +18,6 @@
 		201A124A2B2C173000A1B290 /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12342B2C172F00A1B290 /* UIApplication+Ext.swift */; };
 		201A124B2B2C173000A1B290 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12352B2C172F00A1B290 /* UIViewController+Rx.swift */; };
 		201A124C2B2C173000A1B290 /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12362B2C172F00A1B290 /* URL+Ext.swift */; };
-		201A124D2B2C173000A1B290 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12372B2C172F00A1B290 /* UIButton+Ext.swift */; };
 		201A124E2B2C173000A1B290 /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12382B2C172F00A1B290 /* UIColor+Colors.swift */; };
 		201A124F2B2C173000A1B290 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12392B2C172F00A1B290 /* UIImage+Ext.swift */; };
 		201A12502B2C173000A1B290 /* UIScrollView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A123A2B2C172F00A1B290 /* UIScrollView+Ext.swift */; };
@@ -33,6 +32,18 @@
 		201A125A2B2C173000A1B290 /* BundleFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12442B2C173000A1B290 /* BundleFinder.swift */; };
 		201A125B2B2C173000A1B290 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12452B2C173000A1B290 /* UIColor+Ext.swift */; };
 		201A125C2B2C173000A1B290 /* CellName+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12462B2C173000A1B290 /* CellName+Ext.swift */; };
+		201A12B22B2C334100A1B290 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12B12B2C334100A1B290 /* BaseViewController.swift */; };
+		201A12B82B2C386F00A1B290 /* RXVIPHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12B52B2C386F00A1B290 /* RXVIPHomeViewModel.swift */; };
+		201A12B92B2C386F00A1B290 /* RXVIPHomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12B62B2C386F00A1B290 /* RXVIPHomeNavigator.swift */; };
+		201A12BA2B2C386F00A1B290 /* RXVIPHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12B72B2C386F00A1B290 /* RXVIPHomeViewController.swift */; };
+		201A12BF2B2C387B00A1B290 /* RXVIPIntroNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12BB2B2C387B00A1B290 /* RXVIPIntroNavigator.swift */; };
+		201A12C02B2C387B00A1B290 /* RXVIPIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12BC2B2C387B00A1B290 /* RXVIPIntroViewController.swift */; };
+		201A12C12B2C387B00A1B290 /* RXVIPIntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12BD2B2C387B00A1B290 /* RXVIPIntroViewModel.swift */; };
+		201A12C22B2C387B00A1B290 /* RXVIPIntroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12BE2B2C387B00A1B290 /* RXVIPIntroDetailView.swift */; };
+		201A12C82B2C3A8B00A1B290 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 201A12C72B2C3A8B00A1B290 /* .swiftlint.yml */; };
+		201A12CC2B2C3AAC00A1B290 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A12CB2B2C3AAC00A1B290 /* R.generated.swift */; };
+		201A12CD2B2C3B3500A1B290 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 201A12CF2B2C3B3500A1B290 /* Localizable.strings */; };
+		201A12D72B2C3CCE00A1B290 /* worksans-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 201A12D62B2C3CCE00A1B290 /* worksans-bold.ttf */; };
 		205C9A1A2B2C0E0900058300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C9A192B2C0E0900058300 /* AppDelegate.swift */; };
 		205C9A232B2C0E0A00058300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205C9A222B2C0E0A00058300 /* Assets.xcassets */; };
 		205C9A262B2C0E0A00058300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205C9A242B2C0E0A00058300 /* LaunchScreen.storyboard */; };
@@ -51,7 +62,6 @@
 		201A12342B2C172F00A1B290 /* UIApplication+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
 		201A12352B2C172F00A1B290 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		201A12362B2C172F00A1B290 /* URL+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
-		201A12372B2C172F00A1B290 /* UIButton+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		201A12382B2C172F00A1B290 /* UIColor+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
 		201A12392B2C172F00A1B290 /* UIImage+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		201A123A2B2C172F00A1B290 /* UIScrollView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Ext.swift"; sourceTree = "<group>"; };
@@ -66,6 +76,18 @@
 		201A12442B2C173000A1B290 /* BundleFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleFinder.swift; sourceTree = "<group>"; };
 		201A12452B2C173000A1B290 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		201A12462B2C173000A1B290 /* CellName+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CellName+Ext.swift"; sourceTree = "<group>"; };
+		201A12B12B2C334100A1B290 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		201A12B52B2C386F00A1B290 /* RXVIPHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXVIPHomeViewModel.swift; sourceTree = "<group>"; };
+		201A12B62B2C386F00A1B290 /* RXVIPHomeNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXVIPHomeNavigator.swift; sourceTree = "<group>"; };
+		201A12B72B2C386F00A1B290 /* RXVIPHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXVIPHomeViewController.swift; sourceTree = "<group>"; };
+		201A12BB2B2C387B00A1B290 /* RXVIPIntroNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXVIPIntroNavigator.swift; sourceTree = "<group>"; };
+		201A12BC2B2C387B00A1B290 /* RXVIPIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXVIPIntroViewController.swift; sourceTree = "<group>"; };
+		201A12BD2B2C387B00A1B290 /* RXVIPIntroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXVIPIntroViewModel.swift; sourceTree = "<group>"; };
+		201A12BE2B2C387B00A1B290 /* RXVIPIntroDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RXVIPIntroDetailView.swift; sourceTree = "<group>"; };
+		201A12C72B2C3A8B00A1B290 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		201A12CB2B2C3AAC00A1B290 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		201A12CE2B2C3B3500A1B290 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		201A12D62B2C3CCE00A1B290 /* worksans-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "worksans-bold.ttf"; sourceTree = "<group>"; };
 		205C9A162B2C0E0900058300 /* RX_Base_VIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RX_Base_VIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		205C9A192B2C0E0900058300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		205C9A222B2C0E0A00058300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,7 +150,6 @@
 				201A12342B2C172F00A1B290 /* UIApplication+Ext.swift */,
 				201A12432B2C173000A1B290 /* UIBarButtonItem.swift */,
 				201A123B2B2C172F00A1B290 /* UIBarButtonItem+Badge.swift */,
-				201A12372B2C172F00A1B290 /* UIButton+Ext.swift */,
 				201A12382B2C172F00A1B290 /* UIColor+Colors.swift */,
 				201A12452B2C173000A1B290 /* UIColor+Ext.swift */,
 				201A12392B2C172F00A1B290 /* UIImage+Ext.swift */,
@@ -147,29 +168,26 @@
 		201A12262B2C155B00A1B290 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				201A12282B2C156900A1B290 /* Intro */,
-				201A12272B2C156500A1B290 /* Home */,
+				201A12A12B2C2ECE00A1B290 /* Intro */,
+				201A12282B2C156900A1B290 /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		201A12272B2C156500A1B290 /* Home */ = {
+		201A12282B2C156900A1B290 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				201A12B62B2C386F00A1B290 /* RXVIPHomeNavigator.swift */,
+				201A12B72B2C386F00A1B290 /* RXVIPHomeViewController.swift */,
+				201A12B52B2C386F00A1B290 /* RXVIPHomeViewModel.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		201A12282B2C156900A1B290 /* Intro */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Intro;
 			sourceTree = "<group>";
 		};
 		201A12292B2C157A00A1B290 /* Localized */ = {
 			isa = PBXGroup;
 			children = (
+				201A12CF2B2C3B3500A1B290 /* Localizable.strings */,
 			);
 			path = Localized;
 			sourceTree = "<group>";
@@ -184,6 +202,7 @@
 		201A122B2B2C15E300A1B290 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				201A12B12B2C334100A1B290 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -194,6 +213,25 @@
 				201A122F2B2C16FE00A1B290 /* BehaviorRelay+MutableValue.swift */,
 			);
 			path = "Rx+Ext";
+			sourceTree = "<group>";
+		};
+		201A12A12B2C2ECE00A1B290 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				201A12BE2B2C387B00A1B290 /* RXVIPIntroDetailView.swift */,
+				201A12BB2B2C387B00A1B290 /* RXVIPIntroNavigator.swift */,
+				201A12BC2B2C387B00A1B290 /* RXVIPIntroViewController.swift */,
+				201A12BD2B2C387B00A1B290 /* RXVIPIntroViewModel.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		201A12D52B2C3CCE00A1B290 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				201A12D62B2C3CCE00A1B290 /* worksans-bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		205C9A0D2B2C0E0900058300 = {
@@ -217,6 +255,7 @@
 		205C9A182B2C0E0900058300 /* RX_Base_VIP */ = {
 			isa = PBXGroup;
 			children = (
+				201A12D52B2C3CCE00A1B290 /* Fonts */,
 				201A122B2B2C15E300A1B290 /* Base */,
 				201A122A2B2C15D500A1B290 /* CustomViews */,
 				201A12292B2C157A00A1B290 /* Localized */,
@@ -225,7 +264,9 @@
 				201A12202B2C120600A1B290 /* Commons */,
 				201A121B2B2C110700A1B290 /* Application */,
 				205C9A192B2C0E0900058300 /* AppDelegate.swift */,
+				201A12CB2B2C3AAC00A1B290 /* R.generated.swift */,
 				205C9A222B2C0E0A00058300 /* Assets.xcassets */,
+				201A12C72B2C3A8B00A1B290 /* .swiftlint.yml */,
 				205C9A242B2C0E0A00058300 /* LaunchScreen.storyboard */,
 				205C9A272B2C0E0A00058300 /* Info.plist */,
 			);
@@ -248,6 +289,7 @@
 			buildConfigurationList = 205C9A2A2B2C0E0A00058300 /* Build configuration list for PBXNativeTarget "RX_Base_VIP" */;
 			buildPhases = (
 				F39E693580120177BE8E8AE3 /* [CP] Check Pods Manifest.lock */,
+				201A12D02B2C3BC300A1B290 /* R.swift */,
 				205C9A122B2C0E0900058300 /* Sources */,
 				205C9A132B2C0E0900058300 /* Frameworks */,
 				205C9A142B2C0E0900058300 /* Resources */,
@@ -300,7 +342,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201A12C82B2C3A8B00A1B290 /* .swiftlint.yml in Resources */,
 				205C9A262B2C0E0A00058300 /* LaunchScreen.storyboard in Resources */,
+				201A12CD2B2C3B3500A1B290 /* Localizable.strings in Resources */,
+				201A12D72B2C3CCE00A1B290 /* worksans-bold.ttf in Resources */,
 				205C9A232B2C0E0A00058300 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +353,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		201A12D02B2C3BC300A1B290 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		4034E8E06FFCE986EEE346BC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -357,27 +421,35 @@
 				201A124F2B2C173000A1B290 /* UIImage+Ext.swift in Sources */,
 				201A12592B2C173000A1B290 /* UIBarButtonItem.swift in Sources */,
 				201A121D2B2C112300A1B290 /* BaseApplication.swift in Sources */,
+				201A12B22B2C334100A1B290 /* BaseViewController.swift in Sources */,
 				201A12512B2C173000A1B290 /* UIBarButtonItem+Badge.swift in Sources */,
+				201A12C22B2C387B00A1B290 /* RXVIPIntroDetailView.swift in Sources */,
 				201A12222B2C120600A1B290 /* Constant.swift in Sources */,
+				201A12B82B2C386F00A1B290 /* RXVIPHomeViewModel.swift in Sources */,
 				201A124A2B2C173000A1B290 /* UIApplication+Ext.swift in Sources */,
+				201A12CC2B2C3AAC00A1B290 /* R.generated.swift in Sources */,
 				201A125A2B2C173000A1B290 /* BundleFinder.swift in Sources */,
 				201A12562B2C173000A1B290 /* CollectionView+Ext.swift in Sources */,
 				201A12552B2C173000A1B290 /* PHPickerViewController+Rx.swift in Sources */,
+				201A12B92B2C386F00A1B290 /* RXVIPHomeNavigator.swift in Sources */,
+				201A12C02B2C387B00A1B290 /* RXVIPIntroViewController.swift in Sources */,
 				201A124E2B2C173000A1B290 /* UIColor+Colors.swift in Sources */,
 				201A12502B2C173000A1B290 /* UIScrollView+Ext.swift in Sources */,
+				201A12BF2B2C387B00A1B290 /* RXVIPIntroNavigator.swift in Sources */,
 				201A12482B2C173000A1B290 /* UIViewController+.swift in Sources */,
 				201A12572B2C173000A1B290 /* UIView+Apperance.swift in Sources */,
 				201A125C2B2C173000A1B290 /* CellName+Ext.swift in Sources */,
+				201A12C12B2C387B00A1B290 /* RXVIPIntroViewModel.swift in Sources */,
 				201A12472B2C173000A1B290 /* AnyCollection+Ext.swift in Sources */,
 				201A125B2B2C173000A1B290 /* UIColor+Ext.swift in Sources */,
 				205C9A1A2B2C0E0900058300 /* AppDelegate.swift in Sources */,
+				201A12BA2B2C386F00A1B290 /* RXVIPHomeViewController.swift in Sources */,
 				201A122D2B2C16C400A1B290 /* String+Ext.swift in Sources */,
 				201A12582B2C173000A1B290 /* UIView+Constraints.swift in Sources */,
 				201A124C2B2C173000A1B290 /* URL+Ext.swift in Sources */,
 				201A12542B2C173000A1B290 /* Observable+Loading.swift in Sources */,
 				201A12302B2C16FE00A1B290 /* BehaviorRelay+MutableValue.swift in Sources */,
 				201A12532B2C173000A1B290 /* Rx+CollectionView.swift in Sources */,
-				201A124D2B2C173000A1B290 /* UIButton+Ext.swift in Sources */,
 				201A121F2B2C11A800A1B290 /* BaseApplicationNavigator.swift in Sources */,
 				201A124B2B2C173000A1B290 /* UIViewController+Rx.swift in Sources */,
 				201A12492B2C173000A1B290 /* ObservableConvertibleType+.swift in Sources */,
@@ -387,6 +459,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		201A12CF2B2C3B3500A1B290 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				201A12CE2B2C3B3500A1B290 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		205C9A242B2C0E0A00058300 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

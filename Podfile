@@ -13,18 +13,21 @@ def domain_pods
 end
 
 def app_pods
-  pod 'RXVIPArchitechture', path: '../RXVIPArchitechture'
+  pod 'RXVIPArchitechture', git: 'git@github.com:manhmeu1211/RXVIPArchitechture.git', :inhibit_warnings => false
+#  pod 'RXNetworking', git: 'git@github.com:manhmeu1211/RX_Networking.git', :inhibit_warnings => false
   pod 'RealmSwift'
   pod 'SteviaLayout'
   pod 'Domain', path: "Domain"
   pod 'Platform', path: "Platform"
-  pod 'RX_Networking', path: "RX_Networking"
+  pod 'RXNetworking', path: "RX_Networking"
   pod 'Then'
   pod 'R.swift'
   pod 'SwiftLint'
   pod 'RxGesture'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'NSObject+Rx'
+  pod 'MBProgressHUD'
 end
 
 target 'RX_Base_VIP' do
