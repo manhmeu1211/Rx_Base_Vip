@@ -1,58 +1,93 @@
 PODS:
+  - Alamofire (5.8.1)
   - Domain (1.0.0):
     - RxCocoa
   - Platform (1.0.0):
     - RxCocoa
+  - R.swift (7.3.2)
   - Realm (10.44.0):
     - Realm/Headers (= 10.44.0)
   - Realm/Headers (10.44.0)
   - RealmSwift (10.44.0):
     - Realm (= 10.44.0)
+  - RX_Networking (1.0.0):
+    - Alamofire
+    - RxSwift
+    - SwiftyJSON
+    - Then
   - RxCocoa (6.6.0):
     - RxRelay (= 6.6.0)
     - RxSwift (= 6.6.0)
+  - RxGesture (4.0.4):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - RxRelay (6.6.0):
     - RxSwift (= 6.6.0)
   - RxSwift (6.6.0)
   - RXVIPArchitechture (1.0.0):
     - RxCocoa
   - SteviaLayout (5.1.2)
+  - SwiftLint (0.54.0)
+  - SwiftyJSON (5.0.1)
+  - Then (3.0.0)
 
 DEPENDENCIES:
-  - Domain (from `../Domain`)
-  - Platform (from `../Platform`)
+  - Domain (from `Domain`)
+  - Platform (from `Platform`)
+  - R.swift
   - RealmSwift
+  - RX_Networking (from `RX_Networking`)
+  - RxCocoa
+  - RxGesture
+  - RxSwift
   - RXVIPArchitechture (from `../RXVIPArchitechture`)
   - SteviaLayout
+  - SwiftLint
+  - Then
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - R.swift
     - Realm
     - RealmSwift
     - RxCocoa
+    - RxGesture
     - RxRelay
     - RxSwift
     - SteviaLayout
+    - SwiftLint
+    - SwiftyJSON
+    - Then
 
 EXTERNAL SOURCES:
   Domain:
-    :path: "../Domain"
+    :path: Domain
   Platform:
-    :path: "../Platform"
+    :path: Platform
+  RX_Networking:
+    :path: RX_Networking
   RXVIPArchitechture:
     :path: "../RXVIPArchitechture"
 
 SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
   Domain: a81060b5ebb6be98286453ef69798b69799d4139
   Platform: 133895a02006abef0db54536be9e434c47eef5a3
+  R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
   Realm: 0419a32457873acb720df25bf1d658df36967cf2
   RealmSwift: 352f85c018b4d0efe961974bfa95bf7a30e079f6
+  RX_Networking: 4805b37b24702d23bb744cef433e3a9d6c9e5a3e
   RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
   RXVIPArchitechture: c38f377fe8fb284757d4747bf6709ab6a5203f1a
   SteviaLayout: 05424e528d643657d39ce72c786e4adf13cfc5f2
+  SwiftLint: c1de071d9d08c8aba837545f6254315bc900e211
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: ef1fc25a5ac1acf9ede9bf1cd6113d118c8f4228
+PODFILE CHECKSUM: 64a2b9acd1a1f73368c3a0e8a231e9680c8e51ae
 
 COCOAPODS: 1.14.3

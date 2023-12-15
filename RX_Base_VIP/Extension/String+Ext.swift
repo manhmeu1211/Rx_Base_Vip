@@ -1,14 +1,14 @@
 //
 //  String+Ext.swift
-//  EditorBase
+//  RX_Base_VIP
 //
-//  Created by Trung Vu on 18/07/2023.
+//  Created by Luong Manh on 15/12/2023.
 //
 
 import Foundation
 
-public extension String {
-    static func parse(from string: String) -> Int {
-        return Int(string.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()) ?? 0
+extension String {
+    var localized: String {
+        return NSLocalizedString(self, bundle: Bundle(for: AppDelegate.self), comment: "")
     }
 }
