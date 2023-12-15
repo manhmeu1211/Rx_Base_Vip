@@ -22,4 +22,4 @@ Manh Luong, luongmanhdev@gmail.com
 
 ## License
 
-RXVIPArchitechture is available under the MIT license. See the LICENSE file for more info.
+Rx_Base_Vip is available under the MIT license. See the LICENSE file for more info.
