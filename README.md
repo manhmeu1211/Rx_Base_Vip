@@ -12,7 +12,7 @@ Rx_Base_Vip with RXVIPArchitechture and RXNetworking for build every project
 
 ```ruby
 pod 'RXVIPArchitechture', git: 'https://github.com/manhmeu1211/RXVIPArchitechture.git', :inhibit_warnings => false
-pod 'RXNetworking', git: 'https://github.com/manhmeu1211/RXVIPArchitechture.git', :inhibit_warnings => false
+pod 'RXNetworking', git: 'https://github.com/manhmeu1211/RX_Networking.git', :inhibit_warnings => false
 
 ```
 
