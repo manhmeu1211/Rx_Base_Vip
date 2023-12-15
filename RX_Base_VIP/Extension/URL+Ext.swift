@@ -22,7 +22,9 @@ extension URL {
 
 extension URL {
     public var fileSize: UInt64 {
-        let attributes = try? FileManager.default.attributesOfItem(atPath: self.path) as NSDictionary
+        let attributes = try? FileManager
+            .default
+            .attributesOfItem(atPath: self.path) as NSDictionary
         let size = attributes?.fileSize() ?? 0
         debugPrint("File size: \(size)")
         return size
@@ -40,13 +42,17 @@ public extension Reactive where Base == URL {
         if !manager.fileExists(atPath: file.path) {
             
             let folder = file.deletingLastPathComponent()
-            try? manager.createDirectory(at: folder, withIntermediateDirectories: true, attributes: nil)
+            try? manager.createDirectory(at: folder, withIntermediateDirectories: true,
+                                         attributes: nil)
             manager.createFile(atPath: file.path, contents: Data(), attributes: nil)
         }
         
         return Observable<Void>.create { observer in
             let descriptor = open(file.path, O_EVTONLY)
-            let folderObserver = DispatchSource.makeFileSystemObjectSource(fileDescriptor: descriptor, eventMask: .all, queue: .none)
+            let folderObserver = DispatchSource
+                .makeFileSystemObjectSource(fileDescriptor: descriptor,
+                                            eventMask: .all,
+                                            queue: .none)
             folderObserver.setEventHandler {
                 observer.onNext(())
             }

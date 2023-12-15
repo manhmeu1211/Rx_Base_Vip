@@ -1,14 +1,11 @@
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji)
 
 included:
-    - picpro
+    - RX_Base_VIP
 
 excluded: # paths to ignore during linting. Takes precedence over `included`.
     - Carthage
     - Pods
-    - DesignEditor/R.generated.swift
-    - baby_photo/R.generated.swift
-    - ApplicationCommon/R.generated.swift
 
 disabled_rules: # rule identifiers to exclude from running
     - trailing_whitespace
