@@ -11,8 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 Rx_Base_Vip with RXVIPArchitechture and RXNetworking for build every project
 
 ```ruby
-pod 'RXVIPArchitechture', git: 'git@github.com:manhmeu1211/RXVIPArchitechture.git', :inhibit_warnings => false
-pod 'RXNetworking', git: 'git@github.com:manhmeu1211/RXNetworking.git', :inhibit_warnings => false
+pod 'RXVIPArchitechture', git: 'https://github.com/manhmeu1211/RXVIPArchitechture.git', :inhibit_warnings => false
+pod 'RXNetworking', git: 'https://github.com/manhmeu1211/RXVIPArchitechture.git', :inhibit_warnings => false
 
 ```
 
